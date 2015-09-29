@@ -9,7 +9,7 @@ n = 2
 
 while(n<=length(failure_T))
 {
-  interfailure[n] = failure_T[n] - failure_T[n-1]
+  interfailure[n] = failure_T[n] - failure_T[n-1] #calculating the interfailures
    
    n = n+1
 }
@@ -37,7 +37,7 @@ n = 2
 
 while(n<=length(interfailure))
 {
-  failure_T[n] = interfailure[n] + failure_T[n-1]
+  failure_T[n] = interfailure[n] + failure_T[n-1] #calculating the failure times
   
   n = n + 1
 }
